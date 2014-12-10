@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Articles</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_articles_list">ArticlesListActivity</string>
+    <string name="title_activity_subcategories_list">SubcategoriesListActivity</string>
+    <string name="title_activity_article_view">ArticleViewActivity</string>
+
+</resources>
