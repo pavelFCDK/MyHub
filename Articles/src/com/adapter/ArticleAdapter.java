@@ -1,4 +1,4 @@
-package com.articles;
+package com.adapter;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,6 +6,11 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+
+import com.articles.Article;
+import com.articles.R;
+import com.articles.R.id;
+import com.articles.R.layout;
 
 import android.R.drawable;
 import android.content.Context;
@@ -25,7 +30,7 @@ public class ArticleAdapter extends BaseAdapter{
 	LayoutInflater lInflater;
 	ArrayList<Article> objects;
 	
-	ArticleAdapter(Context context, ArrayList<Article> products) {
+	public ArticleAdapter(Context context, ArrayList<Article> products) {
 	    ctx = context;
 	    objects = products;
 	    lInflater = (LayoutInflater) ctx

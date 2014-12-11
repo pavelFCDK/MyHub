@@ -1,6 +1,11 @@
 package com.articles;
 
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
 public class Article {
 	private String id;
@@ -15,7 +20,7 @@ public class Article {
 	private static String currentId;
 	private static String currentTitle;
 	
-	Article(){};
+	public Article(){};
 	
 	public void setId(String i){
 		id = i;
