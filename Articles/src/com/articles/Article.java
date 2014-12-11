@@ -1,24 +1,55 @@
 package com.articles;
 
+import android.graphics.Bitmap;
+
 public class Article {
-	private static String id;
-	private static String title;
+	private String id;
+	private String title;
+	private String subtilte;
+	private String image;
+	private Bitmap bitmap;
 	private static String author;
 	private static String content;
-	private static String subtilte;
+
 	
-	static public void setId(String i){
+	private static String currentId;
+	private static String currentTitle;
+	
+	Article(){};
+	
+	public void setId(String i){
 		id = i;
 	}
-	static public String getId(){
+	public String getId(){
 		return id;
 	}
 	
-	static public void setTitle(String t){
+	public void setTitle(String t){
 		title = t;
 	}
-	static public String getTitle(){
+	public String getTitle(){
 		return title;
+	}
+	
+	public void setSubtilte(String s){
+		subtilte = s;
+	}
+	public String getSubtitle(){
+		return subtilte;
+	}
+	
+	public void setImage(String s){
+		image = s; 
+	}
+	public String getImage(){
+		return image;
+	}
+	
+	public void setBitmap(Bitmap b){
+		bitmap = b;
+	}
+	public Bitmap getBitmap(){
+		return bitmap;
 	}
 	
 	static public void setAuthor(String a){
@@ -33,5 +64,19 @@ public class Article {
 	}
 	static public String getContent(){
 		return content;
+	}
+	
+	static public void setCurrentId(String i){
+		currentId = i;
+	}
+	static public String getCurrentId(){
+		return currentId;
+	}
+	
+	static public void setCurrentTitle(String i){
+		currentTitle = i;
+	}
+	static public String getCurrentTitle(){
+		return currentTitle;
 	}
 }
